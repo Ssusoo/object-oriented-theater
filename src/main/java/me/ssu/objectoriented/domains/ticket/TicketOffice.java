@@ -16,7 +16,7 @@ public class TicketOffice {
     private List<Ticket> tickets = new ArrayList<>();   // 판매하거나 교환해 줄 티켓 목록
 
     /**
-     *
+     * 소극장에 입장하기 위한 매표소 객체 상태
      * @param amount
      * @param tickets
      */
@@ -25,12 +25,12 @@ public class TicketOffice {
         this.tickets.addAll(Arrays.asList(tickets));
     }
 
-    // 판매 금액 더하기
+    // TODO 판매 금액 더하기
     public void plusAccount(Long amount) {
         this.amount += amount;
     }
 
-    // 판매 금액 빼기
+    // TODO 판매 금액 빼기
     public void minusAccount(Long amount) {
         this.amount -= amount;
     }
