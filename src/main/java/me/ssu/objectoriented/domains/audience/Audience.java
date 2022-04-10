@@ -3,7 +3,7 @@ package me.ssu.objectoriented.domains.audience;
 import me.ssu.objectoriented.domains.bag.Bag;
 
 /**
- * Four Step, 관람객
+ * Fourth Step, 관람객
  * 소지품을 보관할 수 있는 관람객
  *
  */
