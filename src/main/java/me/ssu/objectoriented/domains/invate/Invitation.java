@@ -1,4 +1,4 @@
-package me.ssu.objectoriented.invate;
+package me.ssu.objectoriented.domains.invate;
 
 import java.time.LocalDateTime;
 

@@ -1,4 +1,4 @@
-package me.ssu.objectoriented.ticket;
+package me.ssu.objectoriented.domains.ticket;
 
 /**
  * Second Step
