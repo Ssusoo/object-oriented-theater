@@ -47,19 +47,19 @@ public class Bag {
 //        this.invitation = invitation;
 //    }
 
-    // 초대장 소유 체크(있으면 이벤트 당첨자, 없으면 일반 관람객)
+    // 3th, 초대장 소유 체크(있으면 이벤트 당첨자, 없으면 일반 관람객)
     // TODO 12th, 더이상 외부에서 사용하지 않기 때문에 pulbic -> private로 수정
     private boolean hasInvitation() {
         return invitation != null;
     }
 
-    // 초대장을 티켓으로 교환하는 메서드
+    // 3th, 초대장을 티켓으로 교환하는 메서드
     // TODO 12th, 더이상 외부에서 사용하지 않기 때문에 pulbic -> private로 수정
     private void setTicket(Ticket ticket) {
         this.ticket = ticket;
     }
 
-    // 현금 감소
+    // 3th, 현금 감소
     // TODO 12th, 더이상 외부에서 사용하지 않기 때문에 pulbic -> private로 수정
     private void minusAmount(Long amount) {
         this.amount -= amount;
