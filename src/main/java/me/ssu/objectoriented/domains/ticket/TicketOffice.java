@@ -25,6 +25,14 @@ public class TicketOffice {
         this.tickets.addAll(Arrays.asList(tickets));
     }
 
+    /**
+     * 티켓을 판매하는 메서드
+     * @return
+     */
+    public Ticket getTickets() {
+        return tickets.remove(0);
+    }
+
     // TODO 판매 금액 더하기
     public void plusAccount(Long amount) {
         this.amount += amount;
