@@ -28,7 +28,8 @@ public class Theater {
      * @param audience
      */
     public void enter(Audience audience) {
-        // TODO 수정된 Theater 클래스 어디서도 ticketOffice에 접근하지 않다는 사실 확인.
+        // TODO 극장의 결합도를 낮춘 후
+        //  수정된 Theater 클래스 어디서도 ticketOffice에 접근하지 않다는 사실 확인.
         //  Theater는 ticketOffice가 TicketSeller 내부에 존재한다는 사실을 알지 못함.
         //  Theater는 단지 ticketSeller가 sellTo 메시지를 이해하고 응답할 수 있다는 사실만 알고 있음.
         ticketSeller.sellTO(audience);
