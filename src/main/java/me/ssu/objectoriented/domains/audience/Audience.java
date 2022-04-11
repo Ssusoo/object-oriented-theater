@@ -29,6 +29,7 @@ public class Audience {
 
     /**
      * 11th, Audience의 결합도를 낮춘 설계
+     *  외부의 제3자가 자신의 가방을 열어보도록 허용하지 않음.
      * @param ticket
      * @return
      */
@@ -45,5 +46,4 @@ public class Audience {
             return ticket.getFee();
         }
     }
-
 }
