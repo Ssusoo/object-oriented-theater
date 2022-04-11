@@ -53,7 +53,7 @@ public class TicketOffice {
      * @param audience
      */
     public void sellTicketTo(Audience audience) {
-//        ticketOffice.plusAccount(audience.buy(ticketOffice.getTickets()));
+//        ticketOffice.plusAmount(audience.buy(ticketOffice.getTickets()));
         plusAmount(audience.buy(getTickets()));
     }
 }
