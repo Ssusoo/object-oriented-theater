@@ -35,7 +35,7 @@ public class TicketSeller {
 //    }
 
     /**
-     * 9th, 극장의 결함도를 낮춤
+     * 9th, Audience의 결합도를 낮춤
      *  ticketOffice에 대한 접근은 오직 TicketSeller안에만 존재.
      *
      * 10th, TicketSeller의 결합도를 낮춘 설계
@@ -43,6 +43,7 @@ public class TicketSeller {
      */
     public void sellTO(Audience audience) {
         // TODO 10th, TicketSeller의 결합도를 낮춘 설계
+//        buy(ticketOffice.getTickets());
         ticketOffice.plusAccount(audience.buy(ticketOffice.getTickets()));
 
 //        // 9th, 초대장이 있는 이벤트 관람객이면

@@ -22,7 +22,11 @@ public class Audience {
         this.bag = bag;
     }
 
-    // TODO 가방을 소지할 수 있는 관람객
+
+    // TODO 4th, 가방을 소지할 수 있는 관람객
+    // TODO 11th, Bag에 접근하는 모든 로직을 Audience 내부로 감추기 위해
+    //  buy 메서드를 추가하고, TicketSeller의 sellTO 메서드에서
+    //  getBag 메서드에 접근하는 부분을 buy 메서드로 옮기기
 //    public Bag getBag() {
 //        return bag;
 //    }
