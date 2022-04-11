@@ -40,12 +40,12 @@ public class Audience {
     public Long buy(Ticket ticket) {
         // TODO 11th, 초대장이 있는 이벤트 관람객이라면
         if (bag.hasInvitation()) {
-            // TODO 초대장 있으면 초대장을 티켓으로 교환
+            // TODO 초대장 있으면 초대장을 티켓으로 교환.
             bag.setTicket(ticket);
             return 0L;
         // TODO 11th, 초대장이 없는 관람객이라면
         } else {
-            // TODO 초대장이 없으면 현금으로 티켓 구매
+            // TODO 초대장이 없으면 현금으로 티켓 구매.
             bag.minusAmount(ticket.getFee());
             return ticket.getFee();
         }
