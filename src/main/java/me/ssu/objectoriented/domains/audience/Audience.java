@@ -33,6 +33,8 @@ public class Audience {
 
     /**
      * 11th, Audience의 결합도를 낮춘 설계
+     *  buy 메서드는 인자로 전달된 Ticket을 Bag에 넣은 후
+     *  지불된 금앨을 반환함.
      *  외부의 제3자가 자신의 가방을 열어보도록 허용하지 않음.
      * @param ticket
      * @return
