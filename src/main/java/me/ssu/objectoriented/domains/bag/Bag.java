@@ -4,7 +4,7 @@ import me.ssu.objectoriented.domains.invate.Invitation;
 import me.ssu.objectoriented.domains.ticket.Ticket;
 
 /**
- * Third Step, 소지품을 보관할 수 있는 가방
+ * 3th Step, 소지품을 보관할 수 있는 가방
  *  1) 이벤트 당첨자는 초대장을 보관하는 가방
  *  2) 일반 관람객 현금을 소지
  *  *소지품에는 초대장, 현금, 티켓
@@ -41,7 +41,7 @@ public class Bag {
     }
 
     /**
-     * 현금만 보관(가방 객체 상태 - 일반 관람객)
+     * 3th, 현금만 보관(가방 객체 상태 - 일반 관람객)
      * @param amount
      */
     public Bag(Long amount) {
@@ -49,7 +49,7 @@ public class Bag {
     }
 
     /**
-     * 초대장과 현금(가방 객체 상태 - 이벤트 당첨자)
+     * 3h, 초대장과 현금(가방 객체 상태 - 이벤트 당첨자)
      * @param amount
      * @param invitation
      */
