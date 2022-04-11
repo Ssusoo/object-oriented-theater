@@ -24,7 +24,9 @@ public class Theater {
     }
 
     /**
-     * 8th, 입구 메서드
+     * 7th, 입구 메서드
+     *
+     * 8th, 극장의 결합도 낮추기 -> 판매원이랑 역할 나누기
      * @param audience
      */
     public void enter(Audience audience) {
@@ -38,7 +40,7 @@ public class Theater {
         //  초대장이 있는 이벤트 관람객과 일반 관람객의 상태와
         //  판매원이 초대장을 티켓으로 교환하는 상황과 티켓을 구매하는 방식의
         //  의존성을 극장에게 위임하는 게 아니라 판매원에게로 넘겨 결합도 낮추기
-        // 초대장이 있는 이벤트 관람객이면
+        // 7th, 초대장이 있는 이벤트 관람객이면
 //        if (audience.getBag().hasInvitation()) {
 //            // 판매원은 매표소에서 초대장을 티켓으로 교환해줌.
 //            Ticket ticket = ticketSeller.getTicketOffice().getTickets();
