@@ -51,6 +51,7 @@ public class TicketSeller {
         // 10th, TicketSeller의 결합도를 낮춘 설계
 //        buy(ticketOffice.getTickets());
         // TODO 13th, TicketOffice의 결합도를 낮춘 설계
+//        ticketOffice.plusAmount(audience.buy(ticketOffice.getTickets()));
         ticketOffice.sellTicketTo(audience);
 
 //        // 9th, 초대장이 있는 이벤트 관람객이면
