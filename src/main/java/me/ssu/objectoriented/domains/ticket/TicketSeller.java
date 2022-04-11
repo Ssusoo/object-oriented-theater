@@ -13,7 +13,7 @@ public class TicketSeller {
     private TicketOffice ticketOffice;  // 매표소
 
     /**
-     * 판매원 객체 상태
+     * 6th, 판매원 객체 상태
      * @param ticketOffice
      */
     public TicketSeller(TicketOffice ticketOffice) {
@@ -21,7 +21,7 @@ public class TicketSeller {
     }
 
     /**
-     * 매표소의 상태를 볼 수 있는 판매원
+     * 6th, 매표소의 상태를 볼 수 있는 판매원
      *
      * TicketSeller에서 getTicketOffice 메서드가 제거된 이유?
      *  ticketOffice에 대한 접근은 오직 TicketSeller 안에만 존재하게 됨.
@@ -31,6 +31,11 @@ public class TicketSeller {
 //        return ticketOffice;
 //    }
 
+    /**
+     * 9th, 극장의 결함도를 낮춤
+     *  ticketOffice에 대한 접근은 오직 TicketSeller안에만 존재.
+     * @param audience
+     */
     public void sellTO(Audience audience) {
         // TODO 초대장이 있는 이벤트 관람객이면
         if (audience.getBag().hasInvitation()) {
