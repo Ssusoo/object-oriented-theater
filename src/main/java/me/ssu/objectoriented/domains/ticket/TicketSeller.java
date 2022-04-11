@@ -10,6 +10,9 @@ import me.ssu.objectoriented.domains.audience.Audience;
  * 
  * 10th, TicketSeller의 결합도를 낮춘 설계
  *  *Audience에게로 넘겨주면서 결합도를 줄여보기
+ *  
+ * 13th, TicketOffice의 결합도를 낮춘 설계
+ *  *TickeOffice에 sellTicketTo 메서드 추가하기
  */
 public class TicketSeller {
 
@@ -39,12 +42,16 @@ public class TicketSeller {
      *  ticketOffice에 대한 접근은 오직 TicketSeller안에만 존재.
      *
      * 10th, TicketSeller의 결합도를 낮춘 설계
+     *
+     * 13th, TicketOffice의 결합도를 낮춘 설계
+     *  *TickeOffice에 sellTicketTo 메서드 추가하기
      * @param audience
      */
     public void sellTO(Audience audience) {
-        // TODO 10th, TicketSeller의 결합도를 낮춘 설계
+        // 10th, TicketSeller의 결합도를 낮춘 설계
 //        buy(ticketOffice.getTickets());
-        ticketOffice.plusAccount(audience.buy(ticketOffice.getTickets()));
+        // TODO 13th, TicketOffice의 결합도를 낮춘 설계
+        ticketOffice.sellTicketTo(audience);
 
 //        // 9th, 초대장이 있는 이벤트 관람객이면
 //        if (audience.getBag().hasInvitation()) {

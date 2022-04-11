@@ -1,5 +1,7 @@
 package me.ssu.objectoriented.domains.ticket;
 
+import me.ssu.objectoriented.domains.audience.Audience;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,6 +11,8 @@ import java.util.List;
  *  1) 초대장을 티켓으로 교환
  *  2) 현금으로 티켓 구매
  *  *매표소에는 관람객에게 판매할 티켓과 티켓의 판매 금액이 보관
+ *
+ * 13th, TicketOffice의 결합도를 낮춘 설계
  */
 public class TicketOffice {
 
@@ -33,13 +37,23 @@ public class TicketOffice {
         return tickets.remove(0);
     }
 
-    // TODO 판매 금액 더하기
-    public void plusAccount(Long amount) {
+    // 판매 금액 더하기
+    // TODO 13th, public -> private
+    private void plusAmount(Long amount) {
         this.amount += amount;
     }
 
-    // TODO 판매 금액 빼기
-    public void minusAccount(Long amount) {
-        this.amount -= amount;
+    // 판매 금액 빼기
+//    public void minusAccount(Long amount) {
+//        this.amount -= amount;
+//    }
+
+    /**
+     * 13th, TicketOffice의 결합도를 낮춘 설계
+     * @param audience
+     */
+    public void sellTicketTo(Audience audience) {
+//        ticketOffice.plusAccount(audience.buy(ticketOffice.getTickets()));
+        plusAmount(audience.buy(getTickets()));
     }
 }
