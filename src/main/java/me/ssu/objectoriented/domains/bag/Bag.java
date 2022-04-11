@@ -19,30 +19,15 @@ public class Bag {
     private Invitation invitation;  // 초대장
     private Ticket ticket;          // 티켓
 
-    // TODO 초대장 소유 체크(있으면 이벤트 당첨자, 없으면 일반 관람객)
-    public boolean hasInvitation() {
-        return invitation != null;
-    }
-
     // TODO 티켓 소유 체크(있으면 입장, 없으면 티켓 구매)
 //    public boolean hasTicket() {
 //        return ticket != null;
 //    }
 
-    // TODO 초대장을 티켓으로 교환하는 메서드
-    public void setTicket(Ticket ticket) {
-        this.ticket = ticket;
-    }
-
     // TODO 현금 증가
 //    public void plusAmount(Long amount) {
 //        this.amount += amount;
 //    }
-
-    // TODO 현금 감소
-    public void minusAmount(Long amount) {
-        this.amount -= amount;
-    }
 
     /**
      * 3th, 현금만 보관(가방 객체 상태 - 일반 관람객)
@@ -61,6 +46,24 @@ public class Bag {
 //        this.amount = amount;
 //        this.invitation = invitation;
 //    }
+
+    // TODO 초대장 소유 체크(있으면 이벤트 당첨자, 없으면 일반 관람객)
+    // TODO 더이상 외부에서 사용하지 않기 때문에 pulbic -> private로 수정
+    private boolean hasInvitation() {
+        return invitation != null;
+    }
+
+    // TODO 초대장을 티켓으로 교환하는 메서드
+    // TODO 더이상 외부에서 사용하지 않기 때문에 pulbic -> private로 수정
+    private void setTicket(Ticket ticket) {
+        this.ticket = ticket;
+    }
+
+    // TODO 현금 감소
+    // TODO 더이상 외부에서 사용하지 않기 때문에 pulbic -> private로 수정
+    private void minusAmount(Long amount) {
+        this.amount -= amount;
+    }
 
     /**
      * 12th, Bag의 결합도를 낮춘 설계
