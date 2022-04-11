@@ -4,7 +4,7 @@ import me.ssu.objectoriented.domains.audience.Audience;
 import me.ssu.objectoriented.domains.ticket.TicketSeller;
 
 /**
- * Seventh, 소극장을 구현하는 Theater
+ * 7th, 소극장을 구현하는 Theater
  *  소극장은 먼저 관람객의 가방 안에 초대장이 들어 있는지 확인
  *
  * 8th, 극장의 결합도 낮추기 -> 판매원이랑 역할 나누기
@@ -16,7 +16,7 @@ public class Theater {
     private TicketSeller ticketSeller;
 
     /**
-     * 관람객을 입장시키는 극장 객체 상태
+     * 7th, 관람객을 입장시키는 극장 객체 상태
      * @param ticketSeller
      */
     public Theater(TicketSeller ticketSeller) {
@@ -24,7 +24,7 @@ public class Theater {
     }
 
     /**
-     * 입구 메서드
+     * 8th, 입구 메서드
      * @param audience
      */
     public void enter(Audience audience) {
