@@ -31,9 +31,12 @@ public class TicketOffice {
 
     /**
      * 4th, 티켓을 판매하는 메서드
+     *
+     * 13th, TicketOffice의 결합도를 낮춘 설계
+     *  public -> private
      * @return
      */
-    public Ticket getTickets() {
+    private Ticket getTickets() {
         return tickets.remove(0);
     }
 
