@@ -7,7 +7,6 @@ import me.ssu.objectoriented.domains.audience.Audience;
  *  자신이 일하는 매표소를 알고 있어야 함.
  *
  * 9th, 극장에게 받은 로직 결합도를 받아옴.
- *
  */
 public class TicketSeller {
 
