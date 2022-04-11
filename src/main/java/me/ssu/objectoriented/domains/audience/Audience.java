@@ -9,6 +9,10 @@ import me.ssu.objectoriented.domains.ticket.Ticket;
  *
  * 11th, Audience의 결합도를 낮춘 설계
  *  외부의 제3자가 자신의 가방을 열어보도록 허용하지 않음.
+ *
+ * 12th, Bag의 결합도를 낮춘 설계
+ *  현상태, Audience에 의해 끌려다니는 존재임.
+ *  변경 후, Bag을 자율적인 존재로 바꾸기
  */
 public class Audience {
 
@@ -36,20 +40,24 @@ public class Audience {
      *  buy 메서드는 인자로 전달된 Ticket을 Bag에 넣은 후
      *  지불된 금앨을 반환함.
      *  외부의 제3자가 자신의 가방을 열어보도록 허용하지 않음.
+     *
+     * 12th, Bag의 결합도를 낮춘 설계
      * @param ticket
      * @return
      */
     public Long buy(Ticket ticket) {
-        // TODO 11th, 초대장이 있는 이벤트 관람객이라면
-        if (bag.hasInvitation()) {
-            // TODO 초대장 있으면 초대장을 티켓으로 교환.
-            bag.setTicket(ticket);
-            return 0L;
-        // TODO 11th, 초대장이 없는 관람객이라면
-        } else {
-            // TODO 초대장이 없으면 현금으로 티켓 구매.
-            bag.minusAmount(ticket.getFee());
-            return ticket.getFee();
-        }
+        // TODO 12th, Bag의 결합도를 낮춘 설계
+        return bag.hold(ticket);
+//        // 11th, 초대장이 있는 이벤트 관람객이라면
+//        if (bag.hasInvitation()) {
+//            // 초대장 있으면 초대장을 티켓으로 교환.
+//            bag.setTicket(ticket);
+//            return 0L;
+//        // 11th, 초대장이 없는 관람객이라면
+//        } else {
+//            // 초대장이 없으면 현금으로 티켓 구매.
+//            bag.minusAmount(ticket.getFee());
+//            return ticket.getFee();
+//        }
     }
 }
