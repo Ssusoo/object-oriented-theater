@@ -3,7 +3,7 @@ package me.ssu.objectoriented.domains.ticket;
 import me.ssu.objectoriented.domains.audience.Audience;
 
 /**
- * Sixth Step, 판매원
+ * 6th Step, 판매원
  *  자신이 일하는 매표소를 알고 있어야 함.
  *
  * 9th, 극장에게 받은 로직 결합도를 받아옴.
@@ -66,7 +66,7 @@ public class TicketSeller {
             //  ticketOffice에 대한 접근은 오직 TicketSeller 안에만 존재하게 됨.
             ticketOffice.plusAccount(ticket.getFee());
 
-            // TODO 일반 관람객은 돈을 티켓으로 교환 후 가방에 넣음.
+            // TODO 일반 관람객은 돈을 티켓으로 교환 후 가방에 넣음
             audience.getBag().setTicket(ticket);
         }
     }
