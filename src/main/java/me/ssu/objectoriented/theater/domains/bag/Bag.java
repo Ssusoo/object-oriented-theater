@@ -10,7 +10,7 @@ import me.ssu.objectoriented.theater.domains.ticket.Ticket;
  *  *소지품에는 초대장, 현금, 티켓
  *
  * 12th, Bag의 결합도를 낮춘 설계
- *  현상태, Audience에 의해 끌려다니는 존재임.
+ *  현상태, Audience에 의해 끌려다니는 존재임
  *  변경 후, Bag을 자율적인 존재로 바꾸기
  */
 public class Bag {
