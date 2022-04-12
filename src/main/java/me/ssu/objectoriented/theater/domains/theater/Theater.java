@@ -8,7 +8,7 @@ import me.ssu.objectoriented.theater.domains.ticket.TicketSeller;
  *  소극장은 먼저 관람객의 가방 안에 초대장이 들어 있는지 확인
  *
  * 8th, 극장의 결합도 낮추기 -> 판매원이랑 역할 나누기
- *  이벤트 관람객, 일반 관람객,
+ *  이벤트 관람객, 일반 관람객
  *  판매원 초대장을 티켓으로 티켓을 판매하는 로직 처리의 결합도를 낮추기
  */
 public class Theater {
