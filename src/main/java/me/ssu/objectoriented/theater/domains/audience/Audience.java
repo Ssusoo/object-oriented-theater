@@ -11,7 +11,7 @@ import me.ssu.objectoriented.theater.domains.ticket.Ticket;
  *  외부의 제3자가 자신의 가방을 열어보도록 허용하지 않음.
  *
  * 12th, Bag의 결합도를 낮춘 설계
- *  현상태, Audience에 의해 끌려다니는 존재임.
+ *  현상태, Audience에 의해 끌려다니는 존재임
  *  변경 후, Bag을 자율적인 존재로 바꾸기
  */
 public class Audience {
