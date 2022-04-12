@@ -11,7 +11,7 @@ import me.ssu.objectoriented.theater.domains.audience.Audience;
  * 10th, TicketSeller의 결합도를 낮춘 설계
  *  *Audience에게로 넘겨주면서 결합도를 줄여보기
  *  
- * 13th, TicketOffice의 결합도를 낮춘 설계
+ * 13th, TicketOffice의 결합도를 낮춘 설계.
  *  *TickeOffice에 sellTicketTo 메서드 추가하기
  */
 public class TicketSeller {
