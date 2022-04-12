@@ -12,7 +12,7 @@ import java.util.List;
  *  2) 현금으로 티켓 구매
  *  *매표소에는 관람객에게 판매할 티켓과 티켓의 판매 금액이 보관
  *
- * 13th, TicketOffice의 결합도를 낮춘 설계
+ * 13th, TicketOffice의 결합도를 낮춘 설계.
  */
 public class TicketOffice {
 
