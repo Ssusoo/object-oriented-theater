@@ -1,7 +1,7 @@
-package me.ssu.objectoriented.domains.bag;
+package me.ssu.objectoriented.theater.domains.bag;
 
-import me.ssu.objectoriented.domains.invate.Invitation;
-import me.ssu.objectoriented.domains.ticket.Ticket;
+import me.ssu.objectoriented.theater.domains.invate.Invitation;
+import me.ssu.objectoriented.theater.domains.ticket.Ticket;
 
 /**
  * 3th Step, 소지품을 보관할 수 있는 가방

@@ -1,4 +1,4 @@
-package me.ssu.objectoriented.domains.ticket;
+package me.ssu.objectoriented.theater.domains.ticket;
 
 /**
  * 2th, 공연 관람을 하기위해 티켓 소지
