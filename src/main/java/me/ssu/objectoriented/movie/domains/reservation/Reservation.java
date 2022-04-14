@@ -4,8 +4,21 @@ import me.ssu.objectoriented.movie.domains.customer.Customer;
 import me.ssu.objectoriented.movie.domains.money.Money;
 import me.ssu.objectoriented.movie.domains.screening.Screening;
 
+/**
+ * 3th, 예매 클래스
+ *  고객과 상영정보 예매 요금 인원수를 포함한 클래스
+ */
 public class Reservation {
-    public Reservation(Customer customer, Screening screening, Money calculateFee, int audienceCount) {
 
+    private Customer customer;      // 고객
+    private Screening screening;    // 상영
+    private Money fee;              // 예매 요금
+    private int audienceCount;      // 인원수
+
+    public Reservation(Customer customer, Screening screening, Money fee, int audienceCount) {
+        this.customer = customer;
+        this.screening = screening;
+        this.fee = fee;
+        this.audienceCount = audienceCount;
     }
 }
