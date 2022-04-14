@@ -14,7 +14,7 @@ public class Movie {
 
     private String title;                   // 영화제목
     private Duration runningTime;           // 상영시간
-    private Money fee;                      // 요금
+    private Money fee;                      // 요금(기본요금)
     private DiscountPolicy discountPolicy;  // 할인조건
 
     public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
@@ -28,6 +28,12 @@ public class Movie {
         return fee;
     }
 
+    /**
+     * discountPolicy에게 calculateDiscountAmount 메시지를 전송해
+     *  할인 요금을 반환함.
+     * @param screening
+     * @return
+     */
     public Money calculateMovieFee(Screening screening) {
         return fee.minus(discountPolicy.calculateDiscountAmount(screening));
     }
