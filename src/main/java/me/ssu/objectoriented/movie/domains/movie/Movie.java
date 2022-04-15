@@ -8,6 +8,8 @@ import java.time.Duration;
 
 /**
  * 4th, 영화 클래스
+ *
+ * 11th, Movie 생성자에서 DiscountPolicy(할인 정책) 인스턴스 상태와 갯수
  */
 public class Movie {
 
@@ -16,6 +18,7 @@ public class Movie {
     private Money fee;                      // 요금(기본요금)
     private DiscountPolicy discountPolicy;  // 할인조건
 
+    // TODO 11th, Movie의 생성자는 오직 하나의 DiscountPolicy 인스턴스만 받을 수 있도록 선언돼 있음.
     public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
         this.title = title;
         this.runningTime = runningTime;
