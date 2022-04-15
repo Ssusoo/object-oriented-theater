@@ -1,4 +1,4 @@
-package me.ssu.objectoriented.movie.domains.discountpolicy;
+package me.ssu.objectoriented.movie.domains.policy;
 
 import me.ssu.objectoriented.movie.domains.condition.DiscountCondition;
 import me.ssu.objectoriented.movie.domains.money.Money;

@@ -1,10 +1,9 @@
 package me.ssu.objectoriented.movie.domains.movie;
 
-import me.ssu.objectoriented.movie.domains.discountpolicy.DiscountPolicy;
+import me.ssu.objectoriented.movie.domains.policy.DiscountPolicy;
 import me.ssu.objectoriented.movie.domains.money.Money;
 import me.ssu.objectoriented.movie.domains.screening.Screening;
 
-import javax.management.Query;
 import java.time.Duration;
 
 /**
