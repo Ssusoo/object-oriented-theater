@@ -11,6 +11,10 @@ import java.util.List;
 /**
  * 5th, 할인 정책과 할인 조건
  *  1) 금액 할인 정책, 2) 비율 할인 정책
+ *
+ * 12th, 한 개의 할인조건과 여러 개의 할인 조건(Movie, DiscountPolicy)
+ *  Movie 클래스의 생성자는 DiscountPolicy 한 개만 받을 수 있게 제약되어 있지만
+ *  DiscountPolicy의 경우 여러 개의 할인 조건을 포함할 수 있음.
  */
 public abstract class DiscountPolicy {
 
@@ -21,6 +25,8 @@ public abstract class DiscountPolicy {
         DiscountCondition(할인 조건)의 리스트인 conditions를 객체 변수로 가지기 때문에
         하나의 할인 정책은 여러 개의 할인 조건을 포함할 수 있다.
     */
+    // TODO 12th, Movie 클래스의 생성자와 다르게 DiscountPolicy의 생성자는
+    //  여러 개의 DiscountPolicy를 허용한다.
     public DiscountPolicy(DiscountCondition ... conditions) {
         this.conditions = Arrays.asList(conditions);
     }
