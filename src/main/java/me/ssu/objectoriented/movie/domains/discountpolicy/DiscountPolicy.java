@@ -17,7 +17,7 @@ public abstract class DiscountPolicy {
     // TODO 5th, 할인 조건
     private List<DiscountCondition> conditions = new ArrayList<>();
 
-    /* TODO DiscountPolicy(할인 정책)
+    /* TODO 5th, DiscountPolicy(할인 정책)
         DiscountCondition(할인 조건)의 리스트인 conditions를 객체 변수로 가지기 때문에
         하나의 할인 정책은 여러 개의 할인 조건을 포함할 수 있다.
     */
@@ -25,11 +25,10 @@ public abstract class DiscountPolicy {
         this.conditions = Arrays.asList(conditions);
     }
 
-    //
+    // TODO 5th, 할인금액
     public Money calculateDiscountAmount(Screening screening) {
 
         // TODO 전체 할인 조건(DiscountCondition) each의 isSatisfied 메서드를 호출
-        //  할인 조건을 만족하는지 안 하는지 검증 p53부터
         for (DiscountCondition each : conditions) {
            if (each.isSatisfiedBy(screening)) {
                return getDiscountAmount(screening);
