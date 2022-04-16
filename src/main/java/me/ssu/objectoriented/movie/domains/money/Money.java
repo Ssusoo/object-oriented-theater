@@ -43,9 +43,10 @@ public class Money {
                 .multiply(BigDecimal.valueOf(percent)));
     }
 
-    // TODO compareTo() : 두 값(문자열이나 숫자 둘다 허용)을 비교해 int 값으로 반환하는 함수
-    //  문자열 비교 abcd = zefd == // -25
-    //  숫자 비교 후 동일한 값이면 0 작으면 -1 크면 1 반환
+    /* TODO compareTo() : 두 값(문자열이나 숫자 둘다 허용)을 비교해 int 값으로 반환하는 함수
+        문자열 비교 abcd = zefd == // -25
+        숫자 비교 후 동일한 값이면 0 작으면 -1 크면 1 반환
+    */
     public boolean isLessThan(Money other) {
         return amount.compareTo(other.amount) < 0;
     }
