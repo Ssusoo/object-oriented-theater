@@ -11,8 +11,9 @@ public class Money {
 
     private final BigDecimal amount;
 
-    // TODO Integer(String) a = Integer.valueOf(1 or 문자열)
-    //  : 입력한 값을 Number 객체형으로 반환
+    /* TODO Integer(String) a = Integer.valueOf(1 or 문자열)
+        : 입력한 값을 Number 객체형으로 반환
+    */
     private static Money wons(int amount) {
         return new Money(BigDecimal.valueOf(amount));
     }
@@ -28,7 +29,6 @@ public class Money {
     public Money plus(Money amount) {
         return new Money(this.amount.subtract(amount.amount));
     }
-
 
     /* TODO BigDecimal 사칙연산
         add() : 더하기, subtract() : 빼기
