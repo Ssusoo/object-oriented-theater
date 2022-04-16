@@ -25,8 +25,9 @@ public abstract class DiscountPolicy {
         DiscountCondition(할인 조건)의 리스트인 conditions를 객체 변수로 가지기 때문에
         하나의 할인 정책은 여러 개의 할인 조건을 포함할 수 있다.
     */
-    // TODO 12th, Movie 클래스의 생성자와 다르게 DiscountPolicy의 생성자는
-    //  여러 개의 DiscountPolicy를 허용한다.
+    /*TODO 12th, Movie 클래스의 생성자와 다르게 DiscountPolicy의 생성자는
+        여러 개의 DiscountPolicy를 허용한다.
+    */
     public DiscountPolicy(DiscountCondition ... conditions) {
         this.conditions = Arrays.asList(conditions);
     }
