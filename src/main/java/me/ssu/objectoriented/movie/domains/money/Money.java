@@ -51,7 +51,9 @@ public class Money {
         return amount.compareTo(other.amount) < 0;
     }
 
-    // TODO compareTo() : 두 값(문자열이나 숫자 둘다 허용)을 비교해 int 값으로 반환하는 함수
+    /* TODO compareTo() : 두 값(문자열이나 숫자 둘다 허용)을 비교해
+        int 값으로 반환하는 함수
+    */
     public boolean isGreaterThanOrEqual(Money other) {
         return amount.compareTo(other.amount) >= 0;
     }
