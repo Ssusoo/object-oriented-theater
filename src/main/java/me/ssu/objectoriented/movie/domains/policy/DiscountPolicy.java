@@ -19,12 +19,12 @@ import java.util.List;
 public abstract class DiscountPolicy {
 
     // TODO 5th, 할인 조건
-    private List<DiscountCondition> conditions = new ArrayList<>();
-
     /* TODO 5th, DiscountPolicy(할인 정책)
         DiscountCondition(할인 조건)의 리스트인 conditions를 객체 변수로 가지기 때문에
         하나의 할인 정책은 여러 개의 할인 조건을 포함할 수 있다.
     */
+    private List<DiscountCondition> conditions = new ArrayList<>();
+
     /*TODO 12th, Movie 클래스의 생성자와 다르게 DiscountPolicy의 생성자는
         여러 개의 DiscountPolicy를 허용한다.
     */
