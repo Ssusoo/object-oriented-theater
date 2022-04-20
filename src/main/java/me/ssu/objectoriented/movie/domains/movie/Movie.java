@@ -1,6 +1,6 @@
 package me.ssu.objectoriented.movie.domains.movie;
 
-import me.ssu.objectoriented.movie.domains.policy.DiscountPolicy;
+import me.ssu.objectoriented.movie.domains.policy.DefaultDiscountPolicy;
 import me.ssu.objectoriented.movie.domains.money.Money;
 import me.ssu.objectoriented.movie.domains.screening.Screening;
 
@@ -18,10 +18,10 @@ public class Movie {
     private String title;                   // 영화제목
     private Duration runningTime;           // 상영시간
     private Money fee;                      // 요금(기본요금)
-    private DiscountPolicy discountPolicy;  // 할인조건
+    private DefaultDiscountPolicy discountPolicy;  // 할인조건
 
     // TODO 11th, Movie의 생성자는 오직 하나의 DiscountPolicy 인스턴스만 받을 수 있도록 선언돼 있음.
-    public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
+    public Movie(String title, Duration runningTime, Money fee, DefaultDiscountPolicy discountPolicy) {
         this.title = title;
         this.runningTime = runningTime;
         this.fee = fee;

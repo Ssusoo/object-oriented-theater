@@ -8,7 +8,7 @@ import me.ssu.objectoriented.movie.domains.screening.Screening;
  * 10th, 비율 할인 정책
  *  일정 비율을 차감한다는 거임.
  */
-public class PercentDiscountPolicy extends DiscountPolicy {
+public class PercentDiscountPolicy extends DefaultDiscountPolicy {
 
     private double percent; // 할인 비율 변수
 

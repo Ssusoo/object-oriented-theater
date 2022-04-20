@@ -10,7 +10,7 @@ import me.ssu.objectoriented.movie.domains.screening.Screening;
  *  금액 할인 정책을 구현.
  *
  */
-public class AmountDiscountPolicy extends DiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
 
     private Money discountAmount;   // 할인요금
 

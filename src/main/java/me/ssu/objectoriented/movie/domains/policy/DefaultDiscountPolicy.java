@@ -15,6 +15,8 @@ import java.util.List;
  * 12th, 한 개의 할인조건과 여러 개의 할인 조건(Movie, DiscountPolicy)
  *  Movie 클래스의 생성자는 DiscountPolicy 한 개만 받을 수 있게 제약되어 있지만
  *  DiscountPolicy의 경우 여러 개의 할인 조건을 포함할 수 있음.
+ *
+ *  14th, DiscountPolicy -> DefaultDiscountPolicy로 변경
  */
 
 /**
@@ -26,7 +28,7 @@ import java.util.List;
  *      추상 클래스로 만든 추상 메소드의 경우 상속 받은 자식 클래스는
  *      추상 메소드를 오버라이딩(재정의) 해 무조건적으로 사용해야 함.
  */
-public abstract class DiscountPolicy {
+public abstract class DefaultDiscountPolicy {
 
     // TODO 5th, 할인 조건
     /* TODO 5th, DiscountPolicy(할인 정책)
@@ -38,7 +40,7 @@ public abstract class DiscountPolicy {
     /*TODO 12th, Movie 클래스의 생성자와 다르게 DiscountPolicy의 생성자는
         여러 개의 DiscountPolicy를 허용한다.
     */
-    public DiscountPolicy(DiscountCondition ... conditions) {
+    public DefaultDiscountPolicy(DiscountCondition ... conditions) {
         this.conditions = Arrays.asList(conditions);
     }
 
