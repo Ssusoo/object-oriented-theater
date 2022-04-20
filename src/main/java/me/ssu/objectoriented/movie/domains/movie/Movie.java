@@ -10,6 +10,8 @@ import java.time.Duration;
  * 4th, 영화 클래스
  *
  * 11th, Movie 생성자에서 DiscountPolicy(할인 정책) 인스턴스 상태와 갯수
+ *
+ * 13th, 좀 더 유연한 설계-1
  */
 public class Movie {
 
@@ -37,6 +39,12 @@ public class Movie {
      * @return
      */
     public Money calculateMovieFee(Screening screening) {
+        // TODO 13th, 좀 더 유연한 설계-1(NoneDiscountPolicy 클래스 추가)
+        if (discountPolicy == null) {
+            return fee; // 기본요금
+        }
+
+        // TODO 11th, Movie 생성자에서 DiscountPolicy(할인 정책) 인스턴스 상태와 갯수
         return fee.minus(discountPolicy.calculateDiscountAmount(screening));
     }
 }
