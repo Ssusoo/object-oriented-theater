@@ -16,6 +16,16 @@ import java.util.List;
  *  Movie 클래스의 생성자는 DiscountPolicy 한 개만 받을 수 있게 제약되어 있지만
  *  DiscountPolicy의 경우 여러 개의 할인 조건을 포함할 수 있음.
  */
+
+/**
+ * 추상 클래스(일반 메소드 추상 메소드 둘 다 사용 가능)
+ *  추상 메소드
+ *      선언부만 있고 구현부는 없으며 리턴 역시 없다.
+ *
+ *  추상 클래스 상속시 강제성
+ *      추상 클래스로 만든 추상 메소드의 경우 상속 받은 자식 클래스는
+ *      추상 메소드를 오버라이딩(재정의) 해 무조건적으로 사용해야 함.
+ */
 public abstract class DiscountPolicy {
 
     // TODO 5th, 할인 조건
@@ -43,5 +53,7 @@ public abstract class DiscountPolicy {
        }
        return Money.ZERO;
     }
+
+    // TODO 추상 메소드(상속받으면 무조건적으로 써야 함)
     abstract protected Money getDiscountAmount(Screening screening);
 }
