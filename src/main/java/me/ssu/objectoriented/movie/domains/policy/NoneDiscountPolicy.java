@@ -14,7 +14,7 @@ public class NoneDiscountPolicy implements DiscountPolicy {
 
     // TODO 13th, extends DefaultDiscountPolicy
 //    @Override
-//    protected Money calu(Screening screening) {
+//    protected Money calculateDiscountAmount(Screening screening) {
 //        return Money.ZERO;
 //    }
 
