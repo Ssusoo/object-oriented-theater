@@ -1,5 +1,6 @@
 package me.ssu.objectoriented.theater.domains.ticket;
 
+import me.ssu.objectoriented.theater.domains._2.Ticket;
 import me.ssu.objectoriented.theater.domains.audience.Audience;
 
 import java.util.ArrayList;
