@@ -1,6 +1,6 @@
 package me.ssu.objectoriented.theater.domains.bag;
 
-import me.ssu.objectoriented.theater.domains.invate.Invitation;
+import me.ssu.objectoriented.theater.domains._1.invate.Invitation;
 import me.ssu.objectoriented.theater.domains.ticket.Ticket;
 
 /**
