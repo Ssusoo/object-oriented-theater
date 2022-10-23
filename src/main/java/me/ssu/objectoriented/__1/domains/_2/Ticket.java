@@ -1,4 +1,4 @@
-package me.ssu.objectoriented._1.domains._2;
+package me.ssu.objectoriented.__1.domains._2;
 
 /**
  * 2th, 공연 관람을 하기위해 티켓 소지

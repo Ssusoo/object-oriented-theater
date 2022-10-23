@@ -1,7 +1,7 @@
-package me.ssu.objectoriented._1.domains.theater;
+package me.ssu.objectoriented.__1.domains.theater;
 
-import me.ssu.objectoriented._1.domains.audience.Audience;
-import me.ssu.objectoriented._1.domains.ticket.TicketSeller;
+import me.ssu.objectoriented.__1.domains.audience.Audience;
+import me.ssu.objectoriented.__1.domains.ticket.TicketSeller;
 
 /**
  * 7th, 소극장을 구현하는 Theater

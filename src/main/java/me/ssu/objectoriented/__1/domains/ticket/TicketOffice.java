@@ -1,7 +1,7 @@
-package me.ssu.objectoriented._1.domains.ticket;
+package me.ssu.objectoriented.__1.domains.ticket;
 
-import me.ssu.objectoriented._1.domains._2.Ticket;
-import me.ssu.objectoriented._1.domains.audience.Audience;
+import me.ssu.objectoriented.__1.domains._2.Ticket;
+import me.ssu.objectoriented.__1.domains.audience.Audience;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,7 +1,7 @@
-package me.ssu.objectoriented._1.domains.audience;
+package me.ssu.objectoriented.__1.domains.audience;
 
-import me.ssu.objectoriented._1.domains.bag.Bag;
-import me.ssu.objectoriented._1.domains._2.Ticket;
+import me.ssu.objectoriented.__1.domains.bag.Bag;
+import me.ssu.objectoriented.__1.domains._2.Ticket;
 
 /**
  * 4th, 소지품을 보관할 수 있는 관람객

@@ -1,6 +1,6 @@
-package me.ssu.objectoriented._1.domains.ticket;
+package me.ssu.objectoriented.__1.domains.ticket;
 
-import me.ssu.objectoriented._1.domains.audience.Audience;
+import me.ssu.objectoriented.__1.domains.audience.Audience;
 
 /**
  * 6th Step, 판매원
