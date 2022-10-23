@@ -1,4 +1,4 @@
-package me.ssu.objectoriented._1.menual;
+package me.ssu.objectoriented._1.manual;
 
 public class _1_FullManual {
 /* 1th, 관람객을 유치할 수 있는 로직(로직 구성 및 예외적인 상황)
