@@ -4,7 +4,7 @@ package me.ssu.objectoriented._1.domains;
 public class Bag {
 	private Invitation invitation;  // 초대장
 	private Ticket ticket;          // 입장권
-	private Long amount;            // 현금
+	private long amount;            // 현금
 
 	// TODO 1) 초대장 존재 유무
 	public boolean hasInvitation() {
@@ -17,12 +17,23 @@ public class Bag {
 	}
 
 	// TODO 3) 현금을 증가(환불)
-	public void plusAmount(Long amount) {
+	public void plusAmount(long amount) {
 		this.amount += amount;
 	}
 
 	// TODO 4) 현금을 감소(지불)
-	private void minusAmount(Long amount) {
+	private void minusAmount(long amount) {
 		this.amount -= amount;
+	}
+
+	// TODO 5) 이벤트에 당첨된 관람객(초대장과 현금)
+	public Bag(Invitation invitation, long amount) {
+		this.invitation = invitation;
+		this.amount = amount;
+	}
+
+	// TODO 6) 이벤트에 당첨되지 않은 관람객(현금)
+	public Bag(long amount) {
+		this.amount = amount;
 	}
 }
