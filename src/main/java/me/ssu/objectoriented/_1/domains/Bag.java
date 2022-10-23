@@ -26,14 +26,14 @@ public class Bag {
 		this.amount -= amount;
 	}
 
-	// TODO 5) 이벤트에 당첨된 관람객(초대장과 현금)
+	// TODO 5) 이벤트에 당첨된 관람객의 경우(초대장과 현금)
 	public Bag(Invitation invitation, long amount) {
 		this.invitation = invitation;
 		this.amount = amount;
 	}
 
-	// TODO 6) 이벤트에 당첨되지 않은 관람객(현금)
+	// TODO 6) 이벤트에 당첨되지 않은 관람객의 경우(현금만)
 	public Bag(long amount) {
-		this.amount = amount;
+		this(null, amount);
 	}
 }
