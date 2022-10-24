@@ -18,7 +18,9 @@ public class Theater {
 			// 티켓을 가방에 보관한 관람객
 			audience.getBag().setTicket(ticket);
 		} else {
+			// 판매원에게 받은 티켓
 			Ticket ticket = ticketSeller.getTicketOffice().getTicket();
+			// 티켓을 구매한 관람객
 			audience.getBag().minusAmount(ticket.getFee());
 		}
 	}
