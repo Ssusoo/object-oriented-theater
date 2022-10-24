@@ -9,4 +9,7 @@ public class AutonomyTheater {
 	public AutonomyTheater(TicketSeller ticketSeller) {
 		this.ticketSeller = ticketSeller;
 	}
+
+	// TODO 의존성이 높은 소극장의 입구 메소드 -> 판매원에게 역할로 주기
+	//  enter -> sellTo로 수정
 }
