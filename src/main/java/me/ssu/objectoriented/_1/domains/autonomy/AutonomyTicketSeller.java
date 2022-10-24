@@ -1,8 +1,5 @@
 package me.ssu.objectoriented._1.domains.autonomy;
 
-import me.ssu.objectoriented._1.domains.Audience;
-import me.ssu.objectoriented._1.domains.Ticket;
-import me.ssu.objectoriented._1.domains.TicketOffice;
 import me.ssu.objectoriented._1.domains.encapsulation.EncapsulationAudience;
 import me.ssu.objectoriented._1.domains.encapsulation.EncapsulationTicketOffice;
 
@@ -14,8 +11,8 @@ public class AutonomyTicketSeller {
 	private EncapsulationTicketOffice encapsulationTicketOffice;
 
 	// TODO 1) 판매원은 자신이 일하는 매표소(TicketOffice)를 알고 있어야 함.
-	public AutonomyTicketSeller(EncapsulationTicketOffice ticketOffice) {
-		this.ticketOffice = ticketOffice;
+	public AutonomyTicketSeller(EncapsulationTicketOffice encapsulationTicketOffice) {
+		this.encapsulationTicketOffice = encapsulationTicketOffice;
 	}
 
 	// TODO 2) 자율성 주면서 삭제됨. 판매원은 자신이 일하는 매표소(TicketOffice)의 정보를 알고 있어야 함.
@@ -42,9 +39,9 @@ public class AutonomyTicketSeller {
 	// TODO 3-2) 캡슐화한 관람객으로 인해 sellTo() 메소드 수정
 	public void sellToEncapsulationAudience(EncapsulationAudience encapsulationAudience) {
 		// ticketOffice.plusAmount(encapsulationAudience.buy(ticketOffice.getTicket()));
-		// TODO 3-2)-1. 가방(Bag) 캡슐화로 인해 buy -> encapsulationBagBuy 메소드 수정
+		// TODO 3-2)-1. 가방(Bag) 캡슐화로 인해 buy -> encapsulationBagBuy 메소드 수정(의존도 낮추기)
 		// ticketOffice.plusAmount(encapsulationAudience.encapsulationBagBuy(ticketOffice.getTicket()));
-		// TODO 3-2)-2. 매표소(TicketOffice) 캡슐화로 인해
-
+		// TODO 3-2)-2. 매표소(TicketOffice) 캡슐화로 인해 메소드 수정(의존도 낮추기)
+		encapsulationTicketOffice.sellTicketTo(encapsulationAudience);
 	}
 }
