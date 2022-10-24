@@ -38,6 +38,8 @@ public class AutonomyTicketSeller {
 	//	}
 	// TODO 3-2) 캡슐화한 관람객으로 인해 sellTo() 메소드 수정
 	public void sellToEncapsulationAudience(EncapsulationAudience encapsulationAudience) {
-		ticketOffice.plusAmount(encapsulationAudience.buy(ticketOffice.getTicket()));
+		// ticketOffice.plusAmount(encapsulationAudience.buy(ticketOffice.getTicket()));
+		// TODO 3-2)-1. Bag 캡슐화로 인해 buy -> encapsulationBagBuy 메소드 수정
+		ticketOffice.plusAmount(encapsulationAudience.encapsulationBagBuy(ticketOffice.getTicket()));
 	}
 }
