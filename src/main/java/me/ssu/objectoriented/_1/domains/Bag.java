@@ -15,7 +15,7 @@ public class Bag {
 	public void setTicket(Ticket ticket) {
 		this.ticket = ticket;
 	}
-wq
+
 	// TODO 3) 현금을 증가(환불)
 	public void plusAmount(long amount) {
 		this.amount += amount;
