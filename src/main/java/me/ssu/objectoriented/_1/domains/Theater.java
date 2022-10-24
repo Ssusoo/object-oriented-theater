@@ -15,7 +15,7 @@ public class Theater {
 		if (audience.getBag().hasInvitation()) {
 			// 판매원에게 받은 티켓
 			Ticket ticket = ticketSeller.getTicketOffice().getTicket();
-			// 티켓을 가방에 보관한 관람객
+			// 관람객의 가방에 교환 티켓 넣기
 			audience.getBag().setTicket(ticket);
 		} else {
 			// 판매원에게 받은 티켓
@@ -23,8 +23,8 @@ public class Theater {
 			// 티켓을 현금으로 구매한 관람객
 			audience.getBag().minusAmount(ticket.getFee());
 			// 티켓을 판매한 판매원
-
-			//
+			ticketSeller.getTicketOffice().plusAmount(ticket.getFee());
+			// 관람객의 가방에 구매 티켓 넣기
 			audience.getBag().setTicket(ticket);
 		}
 	}
