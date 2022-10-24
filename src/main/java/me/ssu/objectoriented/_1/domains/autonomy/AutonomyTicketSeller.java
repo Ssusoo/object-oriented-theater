@@ -3,6 +3,7 @@ package me.ssu.objectoriented._1.domains.autonomy;
 import me.ssu.objectoriented._1.domains.Audience;
 import me.ssu.objectoriented._1.domains.Ticket;
 import me.ssu.objectoriented._1.domains.TicketOffice;
+import me.ssu.objectoriented._1.domains.encapsulation.EncapsulationAudience;
 
 // 판매원(TicketSeller) 1)과 2)
 // 자율성이 높은 판매원으로 클래스명 수정(AutonomyTicketSeller)
@@ -23,16 +24,20 @@ public class AutonomyTicketSeller {
 	//		return ticketOffice;
 	//	}
 
-	// TODO 3) 관람객
-	public void sellTo(Audience audience) {
-		if (audience.getBag().hasInvitation()) {
-			Ticket ticket = ticketOffice.getTicket();
-			audience.getBag().setTicket(ticket);
-		} else {
-			Ticket ticket = ticketOffice.getTicket();
-			audience.getBag().minusAmount(ticket.getFee());
-			ticketOffice.plusAmount(ticket.getFee());
-			audience.getBag().setTicket(ticket);
-		}
+	// TODO 3-1) 관람객
+	//	public void sellTo(Audience audience) {
+	//		if (audience.getBag().hasInvitation()) {
+	//			Ticket ticket = ticketOffice.getTicket();
+	//			audience.getBag().setTicket(ticket);
+	//		} else {
+	//			Ticket ticket = ticketOffice.getTicket();
+	//			audience.getBag().minusAmount(ticket.getFee());
+	//			ticketOffice.plusAmount(ticket.getFee());
+	//			audience.getBag().setTicket(ticket);
+	//		}
+	//	}
+	// TODO 3-2) 캡슐화한 관람객으로 인해 sellTo() 메소드 수정
+	public void sellToEncapsulationAudience(EncapsulationAudience encapsulationAudience) {
+		ticketOffice.plusAmount(encapsulationAudience.buy(ticketOffice.getTicket()));
 	}
 }
