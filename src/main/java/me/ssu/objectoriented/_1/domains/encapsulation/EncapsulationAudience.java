@@ -29,9 +29,11 @@ public class EncapsulationAudience {
 	// TODO 3) Bag의 존재를 내부에서 캡슐화하기
 	public Long buy(Ticket ticket) {
 		if (bag.hasInvitation()) {
+			// TODO setTicket 했으면 사용 메소드에서 getTicket으로 받아오면 됨!!!
 			bag.setTicket(ticket);
 			return 0L;
 		} else {
+			// TODO setTicket 했으면 사용 메소드에서 getTicket으로 받아오면 됨!!!
 			bag.setTicket(ticket);
 			bag.minusAmount(ticket.getFee());
 			return ticket.getFee();
