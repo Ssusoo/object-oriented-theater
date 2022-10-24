@@ -14,10 +14,11 @@ import me.ssu.objectoriented._1.domains.Ticket;
 //  1) Bag에 접근하는 모든 로직을 EncapsulationAudience에 buy 메소드 추가하기
 //  2) AutonomyTicketSeller의 sellTo 메소드에서 getBag 메소드 접근하는 부분을 buy 메소드로 옮기기
 public class EncapsulationAudience {
-	private Bag bag;
+	//	private Bag bag;
+	private EncapsulationBag encapsulationBag;
 
-	public EncapsulationAudience(Bag bag) {
-		this.bag = bag;
+	public EncapsulationAudience(EncapsulationBag encapsulationBag) {
+		this.encapsulationBag = encapsulationBag;
 	}
 
 	// TODO 2) Audience가 직접 Bag를 처리하기 때문에 외부에서는 더 이상
@@ -26,17 +27,22 @@ public class EncapsulationAudience {
 	//		return bag;
 	//	}
 
-	// TODO 3) Bag의 존재를 내부에서 캡슐화하기
-	public Long buy(Ticket ticket) {
-		if (bag.hasInvitation()) {
-			// TODO setTicket 했으면 사용 메소드에서 getTicket으로 받아오면 됨!!!
-			bag.setTicket(ticket);
-			return 0L;
-		} else {
-			// TODO setTicket 했으면 사용 메소드에서 getTicket으로 받아오면 됨!!!
-			bag.setTicket(ticket);
-			bag.minusAmount(ticket.getFee());
-			return ticket.getFee();
-		}
+	// TODO 3-1) Bag의 존재를 내부에서 캡슐화하기
+	//	public Long buy(Ticket ticket) {
+	//		if (bag.hasInvitation()) {
+	//			// TODO setTicket 했으면 사용 메소드에서 getTicket으로 받아오면 됨!!!
+	//			bag.setTicket(ticket);
+	//			return 0L;
+	//		} else {
+	//			// TODO setTicket 했으면 사용 메소드에서 getTicket으로 받아오면 됨!!!
+	//			bag.setTicket(ticket);
+	//			bag.minusAmount(ticket.getFee());
+	//			return ticket.getFee();
+	//		}
+	//	}
+
+	// TODO 3-2) Bag의 존재를 내부에서 캡슐화하기
+	public Long encapsulationBagBuy(Ticket ticket) {
+		return encapsulationBag.hold(ticket);
 	}
 }
