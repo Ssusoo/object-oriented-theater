@@ -9,7 +9,7 @@ public class ProblemOfDependencyBetweenTicketOfficeAndAudience {
 		변경 전에는 존재하지 않은 새로운 의존성이 추가된 거다.
 		의존성의 추가는 높은 결합도를 의미하고,
 		높은 결합도는 변경하기 어려운 설계를 의미한다.
-		TicketOffice의 자율성은 높였지만 TODO "전체 설계 관점에서 결합도사 상승했다."
+		TicketOffice의 자율성은 높였지만 TODO "전햣체 설계 관점에서 결합도사 상승했다."
 
 	TODO 이를 통해 알게 된 사실?
 		1) 어떤 기능을 설계하는 방법은 한 가지 이상일 수 있다.
